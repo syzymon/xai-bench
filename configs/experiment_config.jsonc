@@ -11,11 +11,8 @@
             "num_train_samples": 1000,
             "num_val_samples": 100
         }
-    }, 
-    "models": [{
-        "name": "lr",
-        "model_kwargs": {}
     },
+    "models": [
     {
         "name": "dtree",
         "model_kwargs": {}
@@ -28,10 +25,6 @@
     "explainers": [
         {
             "name": "random",
-            "expl_kwargs": {}
-        },
-        {
-            "name": "breakdown",
             "expl_kwargs": {}
         },
         {
@@ -61,12 +54,6 @@
                 "kernel_width": 0.5
             }
         },
-        {
-            "name": "l2x",
-            "expl_kwargs": {
-                "batch_size": 1024
-            }
-        }
     ],
     "metrics": ["roar_faithfulness", "roar_monotonicity", "faithfulness", "monotonicity", "shapley", "shapley_corr", "infidelity"],
     "conditional": "observational" // observational, interventional
