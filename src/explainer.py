@@ -1,5 +1,3 @@
-from custom_explainers.breakdown import BreakDown
-import shap
 import custom_explainers
 
 valid_explainers = {
@@ -10,8 +8,6 @@ valid_explainers = {
     "random": custom_explainers.Random,
     "lime": custom_explainers.Lime,
     "maple": custom_explainers.Maple,
-    "l2x": custom_explainers.L2X,
-    "breakdown": custom_explainers.BreakDown,
 }
 
 
